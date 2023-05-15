@@ -36,7 +36,7 @@ if __name__ == "__main__":
 
     args = argparser.parse_args()
 
-    model = AutoModel.from_pretrained(args.base_model, trust_remote_code=True, load_in_8bit=True, device_map='auto')
+    model = AutoModel.from_pretrained(args.base_model, trust_remote_code=True, load_in_8bit=True, device_map='auto', revision="v0.1.0")
     tokenizer = AutoTokenizer.from_pretrained(args.base_model, trust_remote_code=True)
     
     if args.lora == "":
