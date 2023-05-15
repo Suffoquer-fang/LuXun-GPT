@@ -7,7 +7,10 @@ protobuf>=3.19.5,<3.20.1
 transformers==4.27.1
 icetk
 cpm_kernels==1.0.11
-torch>=1.13.1
+
+--find-links https://download.pytorch.org/whl/torch_stable.html
+torch==1.13.1+cu117
+
 tensorboard
 
 # 
